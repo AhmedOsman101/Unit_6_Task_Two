@@ -1,7 +1,13 @@
+import { Route, Routes } from "react-router-dom";
+import Error404 from "../components/404.jsx";
+
 function App() {
 	return (
 		<>
-			<div>App</div>
+			<Routes>
+				<Route path="/" element={<div>App</div>} />
+				<Route path="/*" Component={Error404} />
+			</Routes>
 		</>
 	);
 }
