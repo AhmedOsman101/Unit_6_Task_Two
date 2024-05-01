@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.navActive {
+		@apply flex items-center px-4 border-b-2 border-transparent text-blue-600 dark:text-blue-400 border-blue-600 dark:border-blue-400;
+	}
+	.navLink {
+		@apply flex items-center px-4 border-b-2 border-transparent;
+	}
+}
+
+* {
+	text-transform: capitalize;
+}
+
+a {
+	text-decoration: inherit;
+	color: inherit;
+}
