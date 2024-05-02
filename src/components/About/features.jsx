@@ -1,5 +1,18 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 /* eslint-disable react/no-unescaped-entities */
 const AboutFeatures = () => {
+	const [aboutFeatures, setAboutFeatures] = useState([]);
+	const fetchData = async () => {
+		const data = (await axios.get("http://localhost:3000/FAQs")).data;
+		return data;
+	};
+	useEffect(() => {
+		fetchData().then((data) => {
+			setAboutFeatures(data);
+		});
+	}, []);
 	return (
 		<>
 			<section className="p-4 lg:p-8 dark:bg-gray-900 dark:text-gray-100">
@@ -7,7 +20,6 @@ const AboutFeatures = () => {
 					<div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
 						<img
 							src="https://source.unsplash.com/640x480/?1"
-							alt=""
 							className="h-80 dark:bg-gray-500 aspect-video"
 						/>
 						<div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-800">

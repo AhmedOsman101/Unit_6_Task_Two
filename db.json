@@ -149,6 +149,7 @@
 		{
 			"id": 1,
 			"name": "Comprehensive Security Risk Assessments",
+			"image": "https://images.pexels.com/photos/1135452/pexels-photo-1135452.jpeg",
 			"features": [
 				"Expert evaluation of potential security vulnerabilities.",
 				"Customized risk assessment reports detailing identified threats and recommended solutions.",
@@ -158,6 +159,7 @@
 		{
 			"id": 2,
 			"name": "Sale and Installation of Security Systems",
+			"image": "https://images.pexels.com/photos/3205737/pexels-photo-3205737.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 			"features": [
 				"High-quality security systems available for purchase tailored to specific needs.",
 				"Professional installation services ensuring optimal functionality and effectiveness.",
@@ -167,6 +169,7 @@
 		{
 			"id": 3,
 			"name": "Security System Maintenance",
+			"image": "https://images.pexels.com/photos/1135453/pexels-photo-1135453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 			"features": [
 				"Regular maintenance plans to ensure the continued reliability and performance of security systems.",
 				"Proactive inspections and repairs to address potential issues before they escalate.",
@@ -176,6 +179,7 @@
 		{
 			"id": 4,
 			"name": "24/7 Monitoring of Alarm Systems",
+			"image": "https://images.pexels.com/photos/14773064/pexels-photo-14773064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 			"features": [
 				"Constant monitoring of alarm systems to detect and respond to security breaches promptly.",
 				"Real-time alerts sent to designated contacts and emergency services when alarms are triggered.",
@@ -185,6 +189,7 @@
 		{
 			"id": 5,
 			"name": "24/7 Monitoring of CCTV Footage",
+			"image": "https://images.pexels.com/photos/207574/pexels-photo-207574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 			"features": [
 				"Continuous surveillance of CCTV footage to identify suspicious activities or incidents.",
 				"Monitoring by trained professionals who can intervene or dispatch authorities as needed.",
@@ -194,6 +199,7 @@
 		{
 			"id": 6,
 			"name": "Customized Security Solutions",
+			"image": "https://images.pexels.com/photos/179993/pexels-photo-179993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 			"features": [
 				"Tailored security solutions designed to meet the specific requirements and budget constraints of clients.",
 				"Consultative approach involving detailed discussions and site assessments to understand unique needs.",
@@ -203,6 +209,7 @@
 		{
 			"id": 7,
 			"name": "Responsive Customer Support",
+			"image": "https://images.pexels.com/photos/96612/pexels-photo-96612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 			"features": [
 				"Dedicated customer support team available round-the-clock to address inquiries and concerns.",
 				"Rapid response times for emergency situations or urgent service requests.",
@@ -212,6 +219,7 @@
 		{
 			"id": 8,
 			"name": "Compliance and Certification",
+			"image": "https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 			"features": [
 				"Adherence to industry standards and regulations to ensure compliance with legal requirements.",
 				"Certification from reputable organizations demonstrating commitment to quality and professionalism.",
