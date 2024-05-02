@@ -15,6 +15,12 @@
 	.navLink {
 		@apply flex items-center px-4 border-b-2 border-transparent  transition-colors duration-[250ms];
 	}
+	/* header {
+		@apply dark:shadow dark:shadow-white sticky;
+	} */
+	section p svg:hover {
+		@apply dark:text-blue-400 text-blue-600 transition-colors duration-[250ms];
+	}
 }
 
 * {
