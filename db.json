@@ -31,5 +31,118 @@
 				"Centrally monitored"
 			]
 		}
+	],
+	"Services": [
+		{
+			"id": "1",
+			"name": "Security risk assessments"
+		},
+		{
+			"id": "2",
+			"name": "Sale and installation of security systems (alarms and CCTV)"
+		},
+		{
+			"id": "3",
+			"name": "Security system maintenance"
+		},
+		{
+			"id": "4",
+			"name": "24/7 monitoring of:",
+			"content": ["Alarm systems", "CCTV footage"]
+		}
+	],
+	"FAQs": [
+		{
+			"id": "1",
+			"Question": "What are some basic security measures I can implement at home or in my business?",
+			"Answers": [
+				"Installing sturdy locks on doors and windows.",
+				"Using security cameras and alarm systems.",
+				"Securing valuable items in safes.",
+				"Ensuring proper lighting around the property."
+			]
+		},
+		{
+			"id": "2",
+			"Question": "How can I protect my digital assets and data from cyber threats?",
+			"Answers": [
+				"Using strong, unique passwords for online accounts.",
+				"Enabling two-factor authentication where possible.",
+				"Keeping software and operating systems updated.",
+				"Being cautious of phishing emails and suspicious links."
+			]
+		},
+		{
+			"id": "3",
+			"Question": "What should I do in case of a security breach or emergency?",
+			"Answers": [
+				"Contacting emergency services immediately if there's a threat to personal safety.",
+				"Reporting security incidents to the appropriate authorities.",
+				"Implementing incident response plans for businesses to mitigate the impact of breaches."
+			]
+		},
+		{
+			"id": "4",
+			"Question": "What are some common security risks and vulnerabilities to be aware of?",
+			"Answers": [
+				"Physical security risks like theft, vandalism, or unauthorized access.",
+				"Cybersecurity risks such as malware infections, data breaches, and phishing attacks.",
+				"Social engineering tactics used to manipulate individuals into revealing sensitive information."
+			]
+		},
+		{
+			"id": "5",
+			"Question": "How can I improve the security of my home or business network?",
+			"Answers": [
+				"Using firewalls and antivirus software to protect against malware.",
+				"Securing Wi-Fi networks with strong passwords and encryption.",
+				"Regularly updating router firmware and disabling unnecessary network services."
+			]
+		},
+		{
+			"id": "6",
+			"Question": "What are some best practices for securing sensitive information and documents?",
+			"Answers": [
+				"Implementing access controls to limit who can view or edit sensitive data.",
+				"Encrypting confidential files and communications.",
+				"Properly disposing of paper documents and electronic devices containing sensitive information."
+			]
+		},
+		{
+			"id": "7",
+			"Question": "How can I assess and mitigate security risks specific to my home or business?",
+			"Answers": [
+				"Conducting regular security risk assessments to identify vulnerabilities.",
+				"Developing and implementing security policies and procedures.",
+				"Training employees or family members on security awareness and best practices."
+			]
+		},
+		{
+			"id": "8",
+			"Question": "What role does surveillance play in enhancing security?",
+			"Answers": [
+				"Acting as a deterrent to potential intruders or criminals.",
+				"Providing evidence in case of security incidents or disputes.",
+				"Allowing for remote monitoring of premises and assets."
+			]
+		},
+		{
+			"id": "9",
+			"Question": "How can I stay informed about the latest security threats and trends?",
+			"Answers": [
+				"Subscribing to security newsletters, blogs, or forums.",
+				"Following reputable security organizations and experts on social media.",
+				"Participating in security training and conferences to stay up-to-date."
+			]
+		},
+		{
+			"id": "10",
+			"Question": "What should I consider when choosing security products or services for my home or business?",
+			"Answers": [
+				"Assessing the specific security needs and risks of your property or organization.",
+				"Researching and comparing different products or service providers.",
+				"Checking for certifications, warranties, and customer reviews before making a decision."
+			]
+		}
 	]
 }
