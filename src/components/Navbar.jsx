@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import NavLink from "./NavLink";
+import CustomNavLink from "./NavLink";
 
 const Navbar = () => {
 	const links = {
@@ -14,6 +14,10 @@ const Navbar = () => {
 		Contact: {
 			path: "/contact",
 			label: "Contact",
+		},
+		FAQs: {
+			path: "/FAQs",
+			label: "FAQs",
 		},
 	};
 
@@ -40,7 +44,9 @@ const Navbar = () => {
 					</Link>
 					<ul className="items-stretch hidden space-x-3 md:flex">
 						{Object.keys(links).map((key, index) => {
-							return <NavLink link={links[key]} key={index} />;
+							return (
+								<CustomNavLink link={links[key]} key={index} />
+							);
 						})}
 					</ul>
 					{/* collapse button */}
