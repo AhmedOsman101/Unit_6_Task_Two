@@ -1,15 +1,35 @@
 {
-	"users": [
+	"Products": [
 		{
 			"id": "1",
-			"name": "admin",
-			"password": "<PASSWORD>"
+			"name": "Basic security package",
+			"features": [
+				"1x alarm system",
+				"1x CCTV camera",
+				"Local CCTV footage storage",
+				"NOT centrally monitored"
+			]
 		},
 
 		{
 			"id": "2",
-			"name": "user",
-			"password": "<PASSWORD>"
+			"name": "Standard security package",
+			"features": [
+				"1x alarm system",
+				"2x CCTV cameras",
+				"Online and local CCTV footage storage",
+				"NOT centrally monitored"
+			]
+		},
+		{
+			"id": "3",
+			"name": "Deluxe security package",
+			"features": [
+				"1x alarm system",
+				"4x CCTV cameras",
+				"Online and local CCTV footage storage",
+				"Centrally monitored"
+			]
 		}
 	]
 }
