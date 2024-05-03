@@ -16,7 +16,7 @@
 	}
 
 	.navLink.active {
-		@apply flex items-center px-4 border-b-2 border-transparent text-blue-600 dark:text-blue-400 border-blue-600 dark:border-blue-400 transition-colors duration-[250ms];
+		@apply text-blue-600 dark:text-blue-400 border-blue-600 dark:border-blue-400;
 	}
 
 	.navLink.active:hover {
