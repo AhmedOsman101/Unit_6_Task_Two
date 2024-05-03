@@ -26,6 +26,28 @@
 	section p svg:hover {
 		@apply dark:text-blue-400 text-blue-600 transition-colors duration-[250ms];
 	}
+
+	.activePlan {
+		@apply cursor-pointer relative flex flex-col items-center p-8 border-2 rounded-md dark:border-blue-300 dark:bg-gray-800;
+	}
+
+	.activePlanBtn {
+		@apply cursor-pointer px-8 py-3 mt-12 text-lg font-semibold uppercase rounded dark:bg-blue-300 dark:text-gray-900;
+	}
+	.plan {
+		@apply cursor-pointer relative z-0 flex flex-col items-center p-8 border rounded-md dark:bg-gray-800;
+	}
+
+	.planBtn {
+		@apply cursor-pointer px-8 py-3 mt-12 text-lg font-semibold uppercase border rounded dark:border-blue-300;
+	}
+
+	.activeFilter {
+		@apply cursor-pointer px-4 py-1 font-semibold border  dark:bg-blue-300 dark:border-blue-300 dark:text-gray-900;
+	}
+	.filter {
+		@apply cursor-pointer px-4 py-1 border dark:border-blue-300;
+	}
 }
 
 * {

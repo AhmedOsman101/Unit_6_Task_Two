@@ -1,7 +1,7 @@
 const Contact = () => {
 	return (
 		<>
-			<section className="grid place-items-center bg-gray-100 dark:bg-gray-900 p-6 text-gray-900 dark:text-gray-50 h-full flex-1">
+			<section className="grid place-items-center bg-gray-100 dark:bg-gray-900 p-6 text-gray-900 dark:text-gray-50 h-full flex-1 rounded-md ">
 				<div className="grid w-full items-center  grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
 					<div className="py-6 md:py-0 md:px-6">
 						<h1 className="text-4xl font-bold">Get in touch</h1>
