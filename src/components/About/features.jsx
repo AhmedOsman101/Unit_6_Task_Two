@@ -8,7 +8,6 @@ const AboutFeatures = () => {
 	const [aboutFeatures, setAboutFeatures] = useState([]);
 	const fetchData = async () => {
 		const data = (await axios.get("http://localhost:3000/Features")).data;
-		console.log(data);
 		return data;
 	};
 	// lg:flex-row-reverse ? lg:flex-row

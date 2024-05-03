@@ -1,33 +1,59 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 const Hero = () => {
+	const [features, setFeatures] = useState([]);
+	const fetchData = async () => {
+		const data = (await axios.get("http://localhost:3000/Features")).data;
+		return data;
+	};
+	// lg:flex-row-reverse ? lg:flex-row
+	useEffect(() => {
+		fetchData().then((data) => {
+			setFeatures(data);
+		});
+	}, []);
 	return (
 		<>
 			<section className="m-4 md:m-8 dark:bg-gray-800 dark:text-gray-100">
 				<div className="container mx-auto p-4 my-6 space-y-2 text-center">
 					<h2 className="text-5xl font-bold">
-						Built to empower every team
+						Built to make you secure
 					</h2>
+
 					<p className="dark:text-gray-400">
-						Libero minima optio qui
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Ex, eveniet!
 					</p>
 				</div>
-				<div className="container mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                    
-					<div className="flex flex-col items-center p-4">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 20 20"
-							fill="currentColor"
-							className="w-8 h-8 dark:text-cyan-400">
-							<path
-								fillRule="evenodd"
-								d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-								clipRule="evenodd"></path>
-						</svg>
-						<h3 className="my-3 text-3xl font-semibold">Product</h3>
-						<div className="space-y-1 leading-tight">
-							<p>Similique quas ea veniam</p>
-						</div>
-					</div>
+				<div className="container mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-4">
+					{features &&
+						features.map((feature, index) => {
+							return (
+								<div
+									className="flex flex-col items-center p-4"
+									key={index}>
+									<svg
+										height="50"
+										width="50"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 512 512">
+										<path
+											fill="#74C0FC"
+											d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0zm0 66.8V444.8C394 378 431.1 230.1 432 141.4L256 66.8l0 0z"
+										/>
+									</svg>
+									<h3 className="my-3 text-lg font-semibold text-center">
+										{feature.name}
+									</h3>
+									{/* <div className="space-y-1 leading-tight">
+										<p className="text-sm">
+											
+										</p>
+									</div> */}
+								</div>
+							);
+						})}
 				</div>
 			</section>
 		</>
