@@ -8,7 +8,7 @@
           "content": "contact section",
           "id": 1714657799136,
           "level": "default",
-          "done": false,
+          "done": true,
           "start": 1714657799136
         }
       },
@@ -30,7 +30,7 @@
           "content": "FAQs section",
           "id": 1714657847873,
           "level": "default",
-          "done": false,
+          "done": true,
           "start": 1714657847873
         }
       },
