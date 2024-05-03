@@ -1,10 +1,11 @@
-import AboutFeatures from "../components/About/features";
+import AboutFeatures from "../components/About/Features";
+import Header from "../components/About/Header";
 
 const About = () => {
 	return (
 		<>
-			<div>about</div>
-            <AboutFeatures />
+			<Header />
+			<AboutFeatures />
 		</>
 	);
 };
