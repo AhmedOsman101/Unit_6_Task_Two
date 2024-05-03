@@ -12,9 +12,9 @@ function App() {
 			<Routes>
 				<Route path="/" Component={Main}>
 					<Route index Component={Home} />
-					<Route path="/about" Component={About} />
-					<Route path="/FAQs" Component={FAQs} />
-					<Route path="/contact" Component={Contact} />
+					<Route path="about" Component={About} />
+					<Route path="faqs" Component={FAQs} />
+					<Route path="contact" Component={Contact} />
 					<Route path="/*" Component={Error404} />
 				</Route>
 			</Routes>
