@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import CustomNavLink from "./NavLink";
+import { useState } from "react";
 
 const Navbar = () => {
 	const links = [
@@ -20,6 +21,12 @@ const Navbar = () => {
 			label: "FAQs",
 		},
 	];
+
+	const [IsOpen, setIsOpen] = useState(false);
+
+	const handleClick = () => {
+		setIsOpen((prev) => !prev);
+	};
 
 	return (
 		<>
@@ -44,13 +51,13 @@ const Navbar = () => {
 					</Link>
 					<ul className="items-stretch hidden space-x-3 md:flex">
 						{links.map((link, index) => {
-							return (
-								<CustomNavLink link={link} key={index} />
-							);
+							return <CustomNavLink link={link} key={index} />;
 						})}
 					</ul>
 					{/* collapse button */}
-					<button className="flex justify-end p-4 md:hidden">
+					<button
+						className="select-none rounded-lg bg-gray-900 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none flex justify-end p-4 md:hidden items-center"
+						onClick={handleClick}>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -64,6 +71,17 @@ const Navbar = () => {
 								d="M4 6h16M4 12h16M4 18h16"></path>
 						</svg>
 					</button>
+					<div
+						className={
+							"absolute right-[2rem] top-[5.1rem] p-4 font-sans text-sm font-normal break-words whitespace-normal dark:bg-gray-800 border rounded-lg shadow-lg w-max border-blue-gray-50 text-blue-gray-500 shadow-blue-gray-500/10 focus:outline-none " +
+							(IsOpen
+								? "flex flex-col place-items-center place-content-center"
+								: "hidden")
+						}>
+						{links.map((link, index) => {
+							return <CustomNavLink link={link} key={index} />;
+						})}
+					</div>
 				</div>
 			</header>
 		</>
