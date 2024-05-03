@@ -2,24 +2,24 @@ import { Link } from "react-router-dom";
 import CustomNavLink from "./NavLink";
 
 const Navbar = () => {
-	const links = {
-		Home: {
+	const links = [
+		{
 			path: "/",
 			label: "Home",
 		},
-		About: {
+		{
 			path: "/about",
 			label: "About",
 		},
-		Contact: {
+		{
 			path: "/contact",
 			label: "Contact",
 		},
-		FAQs: {
-			path: "/FAQs",
+		{
+			path: "/faqs",
 			label: "FAQs",
 		},
-	};
+	];
 
 	return (
 		<>
@@ -43,9 +43,9 @@ const Navbar = () => {
 						</h1>
 					</Link>
 					<ul className="items-stretch hidden space-x-3 md:flex">
-						{Object.keys(links).map((key, index) => {
+						{links.map((link, index) => {
 							return (
-								<CustomNavLink link={links[key]} key={index} />
+								<CustomNavLink link={link} key={index} />
 							);
 						})}
 					</ul>
