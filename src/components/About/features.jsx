@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-unescaped-entities */
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-/* eslint-disable react/no-unescaped-entities */
 const AboutFeatures = () => {
 	const [aboutFeatures, setAboutFeatures] = useState([]);
 	const fetchData = async () => {
