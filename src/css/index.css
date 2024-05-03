@@ -42,3 +42,9 @@ a {
 	text-decoration: inherit;
 	color: inherit;
 }
+
+#AboutHeader {
+	background-image: url("https://source.unsplash.com/random/640x480");
+	background-position: center center;
+	background-size: cover;
+}
