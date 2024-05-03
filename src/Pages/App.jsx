@@ -4,7 +4,7 @@ import Home from "./Home.jsx";
 import Contact from "./Contact.jsx";
 import FAQs from "./FAQs.jsx";
 import Main from "../layout/Main.jsx";
-import { About } from "./About.jsx";
+import About from "./About.jsx";
 
 function App() {
 	return (
