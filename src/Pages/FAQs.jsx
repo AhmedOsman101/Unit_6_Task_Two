@@ -1,17 +1,11 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import Question from "../components/Question";
+import { fetchData } from "../lib/helpers";
 
 const FAQs = () => {
 	const [questions, setQuestions] = useState([]);
-	const fetchData = async () => {
-		const data = (await axios.get("http://localhost:3000/FAQs")).data;
-		return data;
-	};
 	useEffect(() => {
-		fetchData().then((data) => {
-			setQuestions(data);
-		});
+		setQuestions(fetchData("FAQs"));
 	}, []);
 
 	return (

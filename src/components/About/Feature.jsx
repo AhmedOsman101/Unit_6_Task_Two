@@ -1,12 +1,11 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
-
+/* eslint-disable react/prop-types */
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-/* eslint-disable react/prop-types */
 const Feature = ({ feature }) => {
 	useEffect(() => {
 		AOS.init();

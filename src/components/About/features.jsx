@@ -1,20 +1,14 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
-import axios from "axios";
 import { useEffect, useState } from "react";
 import Feature from "./Feature";
+import { fetchData } from "../../lib/helpers";
 
 const AboutFeatures = () => {
 	const [aboutFeatures, setAboutFeatures] = useState([]);
-	const fetchData = async () => {
-		const data = (await axios.get("http://localhost:3000/Features")).data;
-		return data;
-	};
-	// lg:flex-row-reverse ? lg:flex-row
+
 	useEffect(() => {
-		fetchData().then((data) => {
-			setAboutFeatures(data);
-		});
+		setAboutFeatures(fetchData("Features"));
 	}, []);
 	return (
 		<>

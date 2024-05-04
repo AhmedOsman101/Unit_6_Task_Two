@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
-import axios from "axios";
 import { useEffect, useState } from "react";
 import Plan from "./Plan";
 import Contact from "../../Pages/Contact";
+import { fetchData } from "../../lib/helpers";
 
 const Plans = () => {
 	const [products, setProducts] = useState([]);
@@ -13,14 +13,8 @@ const Plans = () => {
 		setIsActive((prev) => !prev);
 	};
 
-	const fetchData = async () => {
-		const data = (await axios.get("http://localhost:3000/Products")).data;
-		return data;
-	};
 	useEffect(() => {
-		fetchData().then((data) => {
-			setProducts(data);
-		});
+		setProducts(fetchData("Products"));
 	}, []);
 
 	return (

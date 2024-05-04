@@ -1,17 +1,11 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
+import { fetchData } from "../../lib/helpers";
 
 const Hero = () => {
 	const [features, setFeatures] = useState([]);
-	const fetchData = async () => {
-		const data = (await axios.get("http://localhost:3000/Features")).data;
-		return data;
-	};
-	// lg:flex-row-reverse ? lg:flex-row
+
 	useEffect(() => {
-		fetchData().then((data) => {
-			setFeatures(data);
-		});
+		setFeatures(fetchData("Features"));
 	}, []);
 	return (
 		<>
