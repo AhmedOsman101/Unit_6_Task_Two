@@ -40,11 +40,7 @@ const Hero = () => {
 									<h3 className="my-3 text-lg font-semibold text-center">
 										{feature.name}
 									</h3>
-									{/* <div className="space-y-1 leading-tight">
-										<p className="text-sm">
-											
-										</p>
-									</div> */}
+				
 								</div>
 							);
 						})}

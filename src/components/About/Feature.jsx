@@ -23,6 +23,7 @@ const Feature = ({ feature }) => {
 						: "lg:flex-row-reverse")
 				}>
 				<img
+					alt={feature.name}
 					src={feature.image}
 					className="h-80 dark:bg-gray-500 aspect-video"
 				/>
