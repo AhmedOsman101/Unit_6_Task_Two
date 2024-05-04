@@ -9,7 +9,7 @@ import About from "./About.jsx";
 function App() {
 	return (
 		<>
-			<Routes>
+			<Routes> 
 				<Route path="/" Component={Main}>
 					<Route index Component={Home} />
 					<Route path="about" Component={About} />
