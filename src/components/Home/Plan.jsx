@@ -16,7 +16,12 @@ const Plan = ({ product, activePlan, setActivePlan }) => {
 						: "plan bg-gray-900"
 				}
 				onClick={() => handleClick(product.id)}>
-				<span className="absolute top-0 px-6 pt-1 pb-2 font-medium rounded-b-lg dark:bg-blue-300 dark:text-gray-900">
+				<span
+					className={
+						product.id == activePlan
+							? "absolute top-0 px-6 pt-1 pb-2 rounded-b-lg dark:bg-blue-300 dark:text-gray-900 font-semibold"
+							: "absolute top-0 px-6 pt-1 pb-2 rounded-b-lg dark:bg-blue-300 dark:text-gray-900"
+					}>
 					{product.title}
 				</span>
 				<p className="flex items-center justify-center my-6 space-x-2 font-bold">

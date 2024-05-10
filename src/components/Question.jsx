@@ -2,7 +2,7 @@
 const Question = ({ data }) => {
 	return (
 		<>
-			<details className="w-full border rounded-lg">
+			<details className="w-full border rounded-lg cursor-pointer">
 				<summary className="px-4 py-6 focus:outline-none focus-visible:ring-cyan-600 focus-visible:dark:ring-cyan-400">
 					{data.question}
 				</summary>

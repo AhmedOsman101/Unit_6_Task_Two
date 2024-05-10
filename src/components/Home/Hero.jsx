@@ -11,12 +11,10 @@ const Hero = () => {
 		<>
 			<section className="m-4 md:m-8 dark:bg-gray-800 dark:text-gray-100">
 				<div className="container mx-auto p-4 my-6 space-y-2 text-center">
-					<h2 className="text-5xl font-bold">
-						Built to make you secure
-					</h2>
+					<h2 className="text-5xl font-bold">Berimbolo Security</h2>
 
 					<p className="dark:text-gray-400">
-						We provide you with a wide range of features and services
+						Built to make you secure
 					</p>
 				</div>
 				<div className="container mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -39,7 +37,6 @@ const Hero = () => {
 									<h3 className="my-3 text-lg font-semibold text-center">
 										{feature.name}
 									</h3>
-				
 								</div>
 							);
 						})}
