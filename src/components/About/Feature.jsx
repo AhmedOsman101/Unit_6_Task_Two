@@ -25,9 +25,9 @@ const Feature = ({ feature }) => {
 				<img
 					alt={feature.name}
 					src={feature.image}
-					className="h-80 dark:bg-gray-500 aspect-video"
+					className="max-w-[45%] dark:bg-gray-500 aspect-video object-cover"
 				/>
-				<div className="flex flex-col justify-center flex-1 p-5 dark:bg-gray-800">
+				<div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-800">
 					<h3 className="text-3xl font-bold">{feature.name}</h3>
 					{feature &&
 						feature.content.map((item, index) => {
@@ -36,10 +36,13 @@ const Feature = ({ feature }) => {
 									className={
 										"dark:text-gray-400 " +
 										(index + 1 == feature.content.length
-											? "my-3"
-											: "mt-3")
+											? "my-6"
+											: "mt-6")
 									}
 									key={index}>
+									<span className="font-bold inline-block mr-2">
+										•{" "}
+									</span>
 									{item}
 								</p>
 							);

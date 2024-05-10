@@ -164,7 +164,7 @@ export default {
 		{
 			id: 1,
 			name: "Comprehensive Security Risk Assessments",
-			image: "https://images.pexels.com/photos/1135452/pexels-photo-1135452.jpeg",
+			image: "https://images.pexels.com/photos/4592239/pexels-photo-4592239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 			content: [
 				"Expert evaluation of potential security vulnerabilities.",
 				"Customized risk assessment reports detailing identified threats and recommended solutions.",
@@ -174,7 +174,7 @@ export default {
 		{
 			id: 2,
 			name: "Sale and Installation of Security Systems",
-			image: "https://images.pexels.com/photos/3205737/pexels-photo-3205737.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+			image: "https://images.pexels.com/photos/8836072/pexels-photo-8836072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 			content: [
 				"High-quality security systems available for purchase tailored to specific needs.",
 				"Professional installation services ensuring optimal functionality and effectiveness.",
@@ -184,7 +184,7 @@ export default {
 		{
 			id: 3,
 			name: "Security System Maintenance",
-			image: "https://images.pexels.com/photos/1135453/pexels-photo-1135453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+			image: "https://images.pexels.com/photos/5589597/pexels-photo-5589597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 			content: [
 				"Regular maintenance plans to ensure the continued reliability and performance of security systems.",
 				"Proactive inspections and repairs to address potential issues before they escalate.",
@@ -194,7 +194,7 @@ export default {
 		{
 			id: 4,
 			name: "24/7 Monitoring of Alarm Systems",
-			image: "https://images.pexels.com/photos/14773064/pexels-photo-14773064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+			image: "https://images.pexels.com/photos/9739769/pexels-photo-9739769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 			content: [
 				"Constant monitoring of alarm systems to detect and respond to security breaches promptly.",
 				"Real-time alerts sent to designated contacts and emergency services when alarms are triggered.",
@@ -214,7 +214,7 @@ export default {
 		{
 			id: 6,
 			name: "Customized Security Solutions",
-			image: "https://images.pexels.com/photos/179993/pexels-photo-179993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+			image: "https://images.pexels.com/photos/10902545/pexels-photo-10902545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 			content: [
 				"Tailored security solutions designed to meet the specific requirements and budget constraints of clients.",
 				"Consultative approach involving detailed discussions and site assessments to understand unique needs.",
@@ -224,7 +224,7 @@ export default {
 		{
 			id: 7,
 			name: "Responsive Customer Support",
-			image: "https://images.pexels.com/photos/96612/pexels-photo-96612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+			image: "https://images.pexels.com/photos/9942069/pexels-photo-9942069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 			content: [
 				"Dedicated customer support team available round-the-clock to address inquiries and concerns.",
 				"Rapid response times for emergency situations or urgent service requests.",
