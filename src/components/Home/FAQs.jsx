@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Question from "../components/Question";
-import { fetchData } from "../lib/helpers";
+import Question from "../Question";
+import { fetchData } from "../../lib/helpers";
 
 const FAQs = () => {
 	const [questions, setQuestions] = useState([]);
@@ -16,10 +16,10 @@ const FAQs = () => {
 						Frequently Asked Questions
 					</h2>
 					<p className="mt-4 mb-8 text-gray-600 dark:text-gray-400">
-						These FAQs cover a range of topics related to general
-						help and advice on security, providing valuable
-						information for individuals and businesses looking to
-						enhance their security measures.
+						These frequently asked questions cover a range of topics
+						related to general help and advice on security,
+						providing valuable information for individuals and
+						businesses looking to enhance their security measures.
 					</p>
 					<div className="space-y-4">
 						{questions &&

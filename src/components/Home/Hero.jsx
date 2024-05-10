@@ -16,8 +16,7 @@ const Hero = () => {
 					</h2>
 
 					<p className="dark:text-gray-400">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Ex, eveniet!
+						We provide you with a wide range of features and services
 					</p>
 				</div>
 				<div className="container mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-4">

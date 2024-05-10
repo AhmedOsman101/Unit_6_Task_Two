@@ -21,7 +21,7 @@ const Plans = () => {
 		<>
 			<section className="py-6 dark:bg-gray-800 dark:text-gray-50">
 				<div className="container mx-auto p-4 sm:p-10">
-					<div className="mb-6 space-y-4 text-center">
+					<div className="mb-6 space-y-4 text-center ">
 						<h1 className="text-4xl font-semibold leading-tight dark:text-blue-300">
 							Pricing and Plans
 						</h1>

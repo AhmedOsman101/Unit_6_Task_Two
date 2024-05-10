@@ -16,10 +16,6 @@ const Navbar = () => {
 			path: "/contact",
 			label: "Contact",
 		},
-		{
-			path: "/faqs",
-			label: "FAQs",
-		},
 	];
 
 	const [IsOpen, setIsOpen] = useState(false);
