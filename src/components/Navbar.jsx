@@ -69,7 +69,7 @@ const Navbar = () => {
 					</button>
 					<div
 						className={
-							"sm:rounded-none sm:border-none md:hidden absolute w-[101%] right-[50%] translate-x-[50%] top-[5rem] p-4 font-sans text-lg font-normal break-words whitespace-normal dark:bg-gray-800 border rounded-lg shadow-lg border-blue-gray-50 text-blue-gray-500 shadow-blue-gray-500/10 focus:outline-none " +
+							"rounded-none border-none md:hidden absolute w-full right-[50%] translate-x-[50%] top-[5rem] p-4 font-sans text-lg font-normal break-words whitespace-normal dark:bg-gray-800 shadow-lg text-blue-gray-500 shadow-blue-gray-500/10 focus:outline-none " +
 							(IsOpen
 								? "flex flex-col place-items-center place-content-center"
 								: "hidden")

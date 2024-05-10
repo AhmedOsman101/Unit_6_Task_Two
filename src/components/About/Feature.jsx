@@ -17,7 +17,7 @@ const Feature = ({ feature }) => {
 				data-aos-easing="ease-in-out"
 				data-aos={feature.id % 2 == 0 ? "fade-right" : "fade-left"}
 				className={
-					"flex flex-col overflow-hidden rounded-md shadow-sm items-stretch " +
+					"flex flex-col items-stretch overflow-hidden rounded-md shadow-sm " +
 					(feature.id % 2 == 0
 						? "lg:flex-row"
 						: "lg:flex-row-reverse")
@@ -25,10 +25,12 @@ const Feature = ({ feature }) => {
 				<img
 					alt={feature.name}
 					src={feature.image}
-					className="max-w-[45%] dark:bg-gray-500 aspect-video object-cover"
+					className="md:max-w-[45%] sm:max-w-[90%] dark:bg-gray-500 aspect-video object-cover md:rounded-none sm:rounded-t-md sm:rounded-b-none"
 				/>
-				<div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-800">
-					<h3 className="text-3xl font-bold">{feature.name}</h3>
+				<div className="flex flex-col justify-center flex-1 p-6 md:rounded-none dark:bg-gray-800 sm:w-[90%] sm:rounded-b-md">
+					<h3 className="md:text-3xl md:font-bold sm:text-lg">
+						{feature.name}
+					</h3>
 					{feature &&
 						feature.content.map((item, index) => {
 							return (
@@ -36,8 +38,8 @@ const Feature = ({ feature }) => {
 									className={
 										"dark:text-gray-400 " +
 										(index + 1 == feature.content.length
-											? "my-6"
-											: "mt-6")
+											? "sm:my-4 lg:my-6"
+											: "sm:mt-4 lg:mt-6")
 									}
 									key={index}>
 									<span className="font-bold inline-block mr-2">
