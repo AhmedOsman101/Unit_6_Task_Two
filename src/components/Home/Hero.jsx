@@ -9,7 +9,7 @@ const Hero = () => {
 	}, []);
 	return (
 		<>
-			<section className="m-4 md:m-8 dark:bg-gray-800 dark:text-gray-100">
+			<section className="m-4 md:m-8 dark:bg-gray-900 dark:text-gray-100 rounded-md">
 				<div className="container mx-auto p-4 my-6 space-y-2 text-center">
 					<h2 className="text-5xl font-bold">Berimbolo Security</h2>
 

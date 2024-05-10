@@ -69,13 +69,19 @@ const Navbar = () => {
 					</button>
 					<div
 						className={
-							"absolute right-[2rem] top-[5.1rem] p-4 font-sans text-sm font-normal break-words whitespace-normal dark:bg-gray-800 border rounded-lg shadow-lg w-max border-blue-gray-50 text-blue-gray-500 shadow-blue-gray-500/10 focus:outline-none " +
+							"sm:rounded-none sm:border-none md:hidden absolute w-[101%] right-[50%] translate-x-[50%] top-[5rem] p-4 font-sans text-lg font-normal break-words whitespace-normal dark:bg-gray-800 border rounded-lg shadow-lg border-blue-gray-50 text-blue-gray-500 shadow-blue-gray-500/10 focus:outline-none " +
 							(IsOpen
 								? "flex flex-col place-items-center place-content-center"
 								: "hidden")
 						}>
 						{links.map((link, index) => {
-							return <CustomNavLink link={link} key={index} />;
+							return (
+								<CustomNavLink
+									handleClick={handleClick}
+									link={link}
+									key={index}
+								/>
+							);
 						})}
 					</div>
 				</div>

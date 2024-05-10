@@ -11,7 +11,8 @@ const Footer = () => {
 						</span>
 					</Link>
 					<span className="text-gray-600 dark:text-gray-400 text-sm">
-						© Copyright 2024. All Rights Reserved.
+						&copy; Copyright {new Date().getFullYear()}. All Rights
+						Reserved.
 					</span>
 				</div>
 			</footer>
