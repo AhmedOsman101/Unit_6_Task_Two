@@ -12,7 +12,7 @@ const Question = ({ data }) => {
 			<div
 				className="w-full border rounded-lg cursor-pointer"
 				onClick={handleClick}>
-				<div className="px-4 py-6 focus:outline-none focus-visible:ring-cyan-600 focus-visible:dark:ring-cyan-400">
+				<div className="Question px-4 py-6 focus:outline-none focus-visible:ring-cyan-600 focus-visible:dark:ring-cyan-400">
 					<svg
 						width="16"
 						height="16"
@@ -39,8 +39,8 @@ const Question = ({ data }) => {
 							<div
 								className={
 									isOpen
-										? "px-4 py-6 pt-2 ml-4 -mt-4 text-gray-600 dark:text-gray-400 overflow-hidden"
-										: "h-0 opacity-0 overflow-hidden"
+										? "pl-6 pr-2 pt-2 pb-4 -mt-4 text-gray-600 dark:text-gray-400 overflow-hidden"
+										: "h-0 opacity-0 overflow-hidden pb-0"
 								}
 								key={index}>
 								• {answer}

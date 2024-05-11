@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Question from "../Question";
+import Question from "./Question";
 import { fetchData } from "../../lib/helpers";
 
 const FAQs = () => {

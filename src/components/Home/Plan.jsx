@@ -12,8 +12,8 @@ const Plan = ({ plan, activePlan, setActivePlan }) => {
 			<div
 				className={
 					plan.id == activePlan
-						? "activePlan scale-100 lg:scale-110 sm:scale-100 w-fit px-14"
-						: "plan bg-gray-900 w-fit px-14"
+						? "activePlan"
+						: "plan"
 				}
 				onClick={() => handleClick(plan.id)}>
 				<span
