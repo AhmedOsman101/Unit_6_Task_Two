@@ -5,12 +5,13 @@
 * {
 	text-transform: capitalize;
 	scroll-behavior: smooth;
-	transition-property: all;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 400ms;
 }
 
 @layer components {
+	* {
+		@apply transition-all duration-[400ms];
+	}
+
 	.Logo:hover svg {
 		@apply text-gray-100;
 	}
@@ -71,18 +72,32 @@
 	}
 
 	@media (max-width: 1242px) {
-
-		#plans{
+		#plans {
 			margin-bottom: 1.2rem;
 		}
 
-		.Question{
+		.Question {
 			font-size: 1rem;
 		}
 
 		.PlansHolder {
-			grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+			grid-template-areas:
+				"col1 col2"
+				"col3 col3" !important;
+			grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+			grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+			row-gap: 2rem !important;
 			margin-top: 0 !important;
+		}
+
+		.BasePlan:nth-child(1) {
+			grid-area: col1 !important;
+		}
+		.BasePlan:nth-child(2) {
+			grid-area: col2 !important;
+		}
+		.BasePlan:nth-child(3) {
+			grid-area: col3 !important;
 		}
 
 		.activePlan {
@@ -124,10 +139,24 @@
 			place-content: center;
 		}
 	}
-
+	@media (max-width: 823px) {
+		.PlansHolder {
+			grid-template-areas: unset !important;
+			grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+			grid-template-rows: auto !important;
+		}
+		.BasePlan:nth-child(1) {
+			grid-area: unset !important;
+		}
+		.BasePlan:nth-child(2) {
+			grid-area: unset !important;
+		}
+		.BasePlan:nth-child(3) {
+			grid-area: unset !important;
+		}
+	}
 	@media (max-width: 640px) {
-
-		.FeatureBody p{
+		.FeatureBody p {
 			line-height: 1.7 !important;
 		}
 
@@ -139,7 +168,7 @@
 			margin-top: 0.6rem;
 		}
 
-		.FeatureBody{
+		.FeatureBody {
 			width: 90% !important;
 		}
 	}

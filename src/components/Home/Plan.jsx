@@ -12,8 +12,8 @@ const Plan = ({ plan, activePlan, setActivePlan }) => {
 			<div
 				className={
 					plan.id == activePlan
-						? "activePlan"
-						: "plan"
+						? "activePlan BasePlan"
+						: "plan BasePlan"
 				}
 				onClick={() => handleClick(plan.id)}>
 				<span
@@ -28,9 +28,7 @@ const Plan = ({ plan, activePlan, setActivePlan }) => {
 					<span className="text-lg line-through dark:text-gray-300">
 						&nbsp;${plan.basePrice}&nbsp;
 					</span>
-					<span className="pb-2 text-4xl">
-						${plan.discountPrice}
-					</span>
+					<span className="pb-2 text-4xl">${plan.discountPrice}</span>
 					<span className="text-lg">/mo</span>
 				</p>
 				<ul className="flex-1 space-y-2">
@@ -52,7 +50,9 @@ const Plan = ({ plan, activePlan, setActivePlan }) => {
 											strokeWidth="2"
 											d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
 									</svg>
-									<span className="PlanFeature">{feature}</span>
+									<span className="PlanFeature">
+										{feature}
+									</span>
 								</li>
 							);
 						})}

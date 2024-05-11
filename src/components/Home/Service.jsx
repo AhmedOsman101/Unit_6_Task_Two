@@ -8,15 +8,40 @@ const Service = ({ service, length }) => {
 		animationDurationCalculator(500, service.id, 50),
 	);
 
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
 	useEffect(() => {
-		Aos.init({ once: true, easing: "ease-in-sine" });
-	}, []);
+		if (checkViewPortWidth(windowWidth)) {
+			Aos.init({ once: true, easing: "ease-in-sine" });
+		}
+		const handleResize = () => {
+			setWindowWidth(window.innerWidth);
+		};
+		// Add event listener
+		window.addEventListener("resize", handleResize);
+
+		// Call handler right away so state gets updated with initial window size
+		handleResize();
+
+		// Remove event listener on cleanup
+		return () => window.removeEventListener("resize", handleResize);
+	}, [windowWidth]); // Empty array ensures that effect is only run on mount and unmount
+
+	const checkViewPortWidth = (windowWidth) => {
+		return windowWidth == window.innerWidth && window.innerWidth >= 1023;
+	};
 
 	return (
 		<>
 			<div
 				className="flex flex-col items-center p-4"
-				data-aos={service.id <= length / 2 ? "fade-right" : "fade-left"}
+				data-aos={
+					checkViewPortWidth(windowWidth)
+						? service.id <= length / 2
+							? "fade-right"
+							: "fade-left"
+						: ""
+				}
 				data-aos-duration={`${fadeDuration}`}
 				data-aos-delay={
 					service.id <= length / 2
