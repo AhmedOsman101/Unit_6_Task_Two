@@ -4,6 +4,7 @@ import { fetchData } from "../../lib/helpers";
 
 const FAQs = () => {
 	const [questions, setQuestions] = useState([]);
+
 	useEffect(() => {
 		setQuestions(fetchData("FAQs"));
 	}, []);
@@ -21,7 +22,7 @@ const FAQs = () => {
 						providing valuable information for individuals and
 						businesses looking to enhance their security measures.
 					</p>
-					<div className="space-y-4">
+					<div className="space-y-4 rounded-lg">
 						{questions &&
 							questions.map((question, index) => (
 								<Question key={index} data={question} />

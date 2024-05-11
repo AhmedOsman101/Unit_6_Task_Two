@@ -12,8 +12,6 @@ const Service = ({ service, length }) => {
 		Aos.init({ once: true, easing: "ease-in-sine" });
 	}, []);
 
-	console.log(fadeDuration);
-
 	return (
 		<>
 			<div

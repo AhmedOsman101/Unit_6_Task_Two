@@ -1,5 +1,5 @@
 export default {
-	Products: [
+	Plans: [
 		{
 			id: "1",
 			title: "Basic",
@@ -15,27 +15,29 @@ export default {
 
 		{
 			id: "2",
-			title: "Standard",
-			features: [
-				"1x alarm system",
-				"2x CCTV cameras",
-				"Online and local CCTV footage storage",
-				"NOT centrally monitored",
-			],
-			basePrice: 32,
-			discountPrice: 24,
-		},
-		{
-			id: "3",
 			title: "Deluxe",
 			features: [
 				"1x alarm system",
 				"4x CCTV cameras",
-				"Online and local CCTV footage storage",
+				"Local CCTV footage storage",
+				"Online CCTV footage storage",
 				"Centrally monitored",
 			],
 			basePrice: 49,
 			discountPrice: 37,
+		},
+		{
+			id: "3",
+			title: "Standard",
+			features: [
+				"1x alarm system",
+				"2x CCTV cameras",
+				"Online CCTV footage storage",
+				"Local CCTV footage storage",
+				"NOT centrally monitored",
+			],
+			basePrice: 32,
+			discountPrice: 24,
 		},
 	],
 	Services: [

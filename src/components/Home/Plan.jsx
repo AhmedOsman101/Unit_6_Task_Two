@@ -2,7 +2,7 @@
 
 import { Link } from "react-router-dom";
 
-const Plan = ({ product, activePlan, setActivePlan }) => {
+const Plan = ({ plan, activePlan, setActivePlan }) => {
 	const handleClick = (id) => {
 		setActivePlan(id);
 	};
@@ -11,31 +11,31 @@ const Plan = ({ product, activePlan, setActivePlan }) => {
 		<>
 			<div
 				className={
-					product.id == activePlan
-						? "activePlan bg-gray-900"
-						: "plan bg-gray-900"
+					plan.id == activePlan
+						? "activePlan scale-100 lg:scale-110 sm:scale-100 w-fit px-14"
+						: "plan bg-gray-900 w-fit px-14"
 				}
-				onClick={() => handleClick(product.id)}>
+				onClick={() => handleClick(plan.id)}>
 				<span
 					className={
-						product.id == activePlan
-							? "absolute top-0 px-6 pt-1 pb-2 rounded-b-lg dark:bg-blue-300 dark:text-gray-900 font-semibold"
-							: "absolute top-0 px-6 pt-1 pb-2 rounded-b-lg dark:bg-blue-300 dark:text-gray-900"
+						plan.id == activePlan
+							? "absolute top-0 px-6 pt-1 pb-2 rounded-b-lg font-semibold dark:bg-blue-300 dark:text-gray-900"
+							: "absolute top-0 px-6 pt-1 pb-2 rounded-b-lg font-semibold dark:text-white border rounded rounded-t-none dark:border-blue-300"
 					}>
-					{product.title}
+					{plan.title}
 				</span>
 				<p className="flex items-center justify-center my-6 space-x-2 font-bold">
 					<span className="text-lg line-through dark:text-gray-300">
-						&nbsp;${product.basePrice}&nbsp;
+						&nbsp;${plan.basePrice}&nbsp;
 					</span>
 					<span className="pb-2 text-4xl">
-						${product.discountPrice}
+						${plan.discountPrice}
 					</span>
 					<span className="text-lg">/mo</span>
 				</p>
 				<ul className="flex-1 space-y-2">
-					{product.features &&
-						product.features.map((feature, index) => {
+					{plan.features &&
+						plan.features.map((feature, index) => {
 							return (
 								<li
 									className="flex items-center space-x-2"
@@ -52,7 +52,7 @@ const Plan = ({ product, activePlan, setActivePlan }) => {
 											strokeWidth="2"
 											d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
 									</svg>
-									<span>{feature}</span>
+									<span className="PlanFeature">{feature}</span>
 								</li>
 							);
 						})}
@@ -60,7 +60,7 @@ const Plan = ({ product, activePlan, setActivePlan }) => {
 				<Link
 					to="contact"
 					className={
-						product.id == activePlan ? "activePlanBtn" : "planBtn"
+						plan.id == activePlan ? "activePlanBtn" : "planBtn"
 					}>
 					Subscribe
 				</Link>

@@ -5,9 +5,11 @@ import FAQs from "../components/Home/FAQs";
 const Home = () => {
 	return (
 		<>
-			<Hero />
-			<Plans />
-			<FAQs />
+			<div className="grid place-items-center">
+				<Hero />
+				<Plans />
+				<FAQs />
+			</div>
 		</>
 	);
 };

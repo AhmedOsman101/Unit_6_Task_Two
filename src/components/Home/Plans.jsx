@@ -5,7 +5,7 @@ import Contact from "../../Pages/Contact";
 import { fetchData } from "../../lib/helpers";
 
 const Plans = () => {
-	const [products, setProducts] = useState([]);
+	const [plans, setPlans] = useState([]);
 	const [activePlan, setActivePlan] = useState(2);
 	const [isActive, setIsActive] = useState(true);
 
@@ -14,21 +14,21 @@ const Plans = () => {
 	};
 
 	useEffect(() => {
-		setProducts(fetchData("Products"));
+		setPlans(fetchData("Plans"));
 	}, []);
 
 	return (
 		<>
-			<section className="py-6 dark:bg-gray-800 dark:text-gray-50" id="plans">
-				<div className="container mx-auto p-4 sm:p-10">
-					<div className="mb-6 space-y-4 text-center ">
+			<section className="py-6 dark:bg-gray-800 dark:text-gray-50 w-full">
+				<div className="mx-auto p-4 sm:p-10">
+					<div className="mb-12 space-y-4 text-center PlansTitle">
 						<h1 className="text-4xl font-semibold leading-tight dark:text-blue-300">
 							Pricing and Plans
 						</h1>
 						<p className="font-bold px-4 sm:px-8 lg:px-24">
 							Get the most secure service at the best price
 						</p>
-						<div>
+						<div id="plans">
 							<button
 								className={
 									isActive
@@ -52,12 +52,12 @@ const Plans = () => {
 
 					{!isActive && <Contact />}
 					{isActive && (
-						<div className="grid max-w-md grid-cols-1 gap-6 mx-auto auto-rows-fr lg:max-w-full lg:gap-2 xl:gap-6 lg:grid-cols-3">
-							{products &&
-								products.map((product, index) => {
+						<div className="PlansHolder grid grid-cols-1 place-items-center gap-8 auto-rows-fr lg:max-w-full lg:gap-3 xl:gap-6 lg:grid-cols-3">
+							{plans &&
+								plans.map((plan, index) => {
 									return (
 										<Plan
-											product={product}
+											plan={plan}
 											key={index}
 											activePlan={activePlan}
 											setActivePlan={setActivePlan}

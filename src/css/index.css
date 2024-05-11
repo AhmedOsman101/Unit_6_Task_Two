@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	text-transform: capitalize;
+	scroll-behavior: smooth;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 400ms;
+}
+
 @layer components {
 	.Logo:hover svg {
 		@apply text-gray-100;
@@ -26,32 +34,53 @@
 	section p svg:hover {
 		@apply dark:text-blue-400 text-blue-600 transition-colors duration-[250ms];
 	}
+	.plan {
+		@apply bg-gray-900 cursor-pointer relative z-0 flex flex-col items-center p-8 border rounded-md dark:bg-gray-900;
+	}
 
 	.activePlan {
-		@apply cursor-pointer relative flex flex-col items-center p-8 border-2 rounded-md dark:border-blue-300 dark:bg-gray-800;
-	}
-
-	.activePlanBtn {
-		@apply cursor-pointer px-8 py-3 mt-12 text-lg font-semibold uppercase rounded dark:bg-blue-300 dark:text-gray-900;
-	}
-	.plan {
-		@apply cursor-pointer relative z-0 flex flex-col items-center p-8 border rounded-md dark:bg-gray-800;
+		@apply bg-gray-900 cursor-pointer relative flex flex-col items-center p-8 border-2 rounded-md dark:border-blue-300 dark:bg-gray-900;
 	}
 
 	.planBtn {
 		@apply cursor-pointer px-8 py-3 mt-12 text-lg font-semibold uppercase border rounded dark:border-blue-300;
 	}
 
-	.activeFilter {
-		@apply cursor-pointer px-4 py-1 font-semibold border  dark:bg-blue-300 dark:border-blue-300 dark:text-gray-900;
+	.activePlanBtn {
+		@apply cursor-pointer px-8 py-3 mt-12 text-lg font-semibold uppercase rounded dark:bg-blue-300 dark:text-gray-900;
 	}
+
 	.filter {
 		@apply cursor-pointer px-4 py-1 border dark:border-blue-300;
 	}
-}
 
-* {
-	text-transform: capitalize;
+	.activeFilter {
+		@apply cursor-pointer px-4 py-1 font-semibold border  dark:bg-blue-300 dark:border-blue-300 dark:text-gray-900;
+	}
+
+	@media (max-width: 1278px) {
+		.plan,
+		.activePlan {
+			margin-right: 1rem !important;
+			margin-left: 1rem !important;
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
+		}
+	}
+	@media (max-width: 1242px) {
+		.PlansHolder {
+			grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+			margin-top: 0 !important;
+		}
+
+		.activePlan {
+			transform: initial !important;
+		}
+
+		.PlansTitle {
+			margin-bottom: 0.5rem !important;
+		}
+	}
 }
 
 body {
@@ -68,4 +97,5 @@ a {
 
 .blend-normal {
 	mix-blend-mode: normal;
+	display: block;
 }
