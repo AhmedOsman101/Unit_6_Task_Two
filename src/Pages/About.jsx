@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import AboutFeatures from "../components/About/Features";
 import Header from "../components/About/Header";
 
 const About = () => {
+	useEffect(() => {
+		document.title = "Berimbolo Security | About";
+		alert(`${window.innerWidth}px x ${window.innerHeight}px`);
+	}, []);
+
 	return (
 		<>
 			<div id="About">

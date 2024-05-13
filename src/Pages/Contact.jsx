@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const Contact = () => {
+	useEffect(() => {
+		document.title = "Berimbolo Security | Contact";
+	}, []);
 	return (
 		<>
 			<section className="grid place-items-center bg-gray-100 dark:bg-gray-900 p-6 text-gray-900 dark:text-gray-50 h-full flex-1 rounded-md ">

@@ -195,7 +195,7 @@
 
 		#About > section > div > div {
 			display: grid;
-			place-items: center;
+			place-items: start;
 		}
 	}
 }
