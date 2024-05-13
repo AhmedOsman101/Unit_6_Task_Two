@@ -8,9 +8,9 @@
 }
 
 @layer components {
-	* {
+	/* * {
 		@apply transition-all duration-[400ms];
-	}
+	} */
 
 	.Logo:hover svg {
 		@apply text-gray-100;
@@ -35,14 +35,17 @@
 	section p svg:hover {
 		@apply dark:text-blue-400 text-blue-600 transition-colors duration-[250ms];
 	}
+
 	.plan {
-		@apply bg-gray-900 cursor-pointer relative z-0 flex flex-col items-center p-8 border rounded-md dark:bg-gray-900 w-fit px-14;
-		align-self: normal !important;
+		@apply z-0 border;
+	}
+
+	.BasePlan {
+		@apply dark:bg-gray-900 rounded-md flex flex-col items-center p-8 relative cursor-pointer bg-gray-900 w-fit px-14;
 	}
 
 	.activePlan {
-		@apply bg-gray-900 cursor-pointer relative flex flex-col items-center p-8 border-2 rounded-md dark:border-blue-300 dark:bg-gray-900 scale-100 lg:scale-110 sm:scale-100 w-fit px-14;
-		align-self: normal !important;
+		@apply border-2 dark:border-blue-300 scale-100 lg:scale-110 sm:scale-100;
 	}
 
 	.planBtn {
@@ -60,6 +63,18 @@
 	.activeFilter {
 		@apply cursor-pointer px-4 py-1 font-semibold border  dark:bg-blue-300 dark:border-blue-300 dark:text-gray-900;
 	}
+
+	.FeatureBtn {
+		@apply relative px-6 py-3 overflow-hidden font-semibold rounded dark:bg-gray-100 dark:text-gray-900 self-start;
+	}
+
+	/* .FeatureBtn:hover {
+		@apply dark:bg-slate-200;
+	} */
+
+	/* .FeatureBtn:hover > span {
+		@apply dark:bg-cyan-500;
+	} */
 
 	@media (max-width: 1278px) {
 		.plan,
@@ -171,6 +186,17 @@
 		.FeatureBody {
 			width: 90% !important;
 		}
+
+		.FeatureBtn {
+			width: 60% !important;
+			align-self: center;
+			text-align: center;
+		}
+
+		#About > section > div > div {
+			display: grid;
+			place-items: center;
+		}
 	}
 }
 
@@ -178,7 +204,7 @@ body {
 	position: relative;
 	padding-bottom: 110px;
 	min-height: 100vh; /* Ensure body takes up at least the height of the viewport */
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 }
 
 a {
@@ -199,4 +225,31 @@ img {
 	background-repeat: no-repeat;
 	background-size: cover;
 	shape-margin: 1rem;
+}
+
+.FeatureBtn:hover > span {
+	background-color: #06b6d4;
+}
+
+.FeatureBtn:hover {
+	background-color: #c7cdd6 !important;
+	transform: scale(1.05);
+}
+
+#About {
+	overflow-x: hidden !important;
+}
+
+#About a:hover {
+	background-color: #0e7490;
+}
+
+.BasePlan,
+.BasePlan *,
+#Question *,
+.navLink,
+footer *,
+#About a {
+	transition: all 450ms !important;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
 }

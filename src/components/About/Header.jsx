@@ -14,7 +14,7 @@ const Header = () => {
 						</p>
 						<Link
 							to="/"
-							className="self-start px-10 py-3 text-lg font-medium rounded-3xl bg-cyan-600 text-gray-50">
+							className="self-start px-10 py-3 text-lg font-medium rounded-3xl bg-cyan-600 text-gray-50 hover:dark:bg-cyan-700">
 							Learn More
 						</Link>
 					</div>

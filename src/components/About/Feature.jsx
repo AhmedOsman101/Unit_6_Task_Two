@@ -52,7 +52,7 @@ const Feature = ({ feature }) => {
 							})}
 						<Link
 							to="/#plans"
-							className="relative px-6 py-3 overflow-hidden font-semibold rounded dark:bg-gray-100 dark:text-gray-900 self-start">
+							className="FeatureBtn">
 							view available plans
 							<span className="absolute top-0 right-0 px-5 py-1 text-[0.65rem] tracking-wider text-center uppercase whitespace-no-wrap origin-bottom-left transform rotate-45 -translate-y-full translate-x-1/3 dark:bg-cyan-400">
 								Hot

@@ -10,6 +10,7 @@ const Question = ({ data }) => {
 	return (
 		<>
 			<div
+				id="Question"
 				className="w-full border rounded-lg cursor-pointer"
 				onClick={handleClick}>
 				<div className="Question px-4 py-6 focus:outline-none focus-visible:ring-cyan-600 focus-visible:dark:ring-cyan-400">
