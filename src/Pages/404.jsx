@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Error404 = () => {
+	useEffect(() => {
+		document.title = "Berimbolo Security | Error 404";
+	}, []);
+
 	return (
 		<>
 			<section className="flex items-center h-screen p-16 dark:bg-gray-900 bg-gray-50 dark:text-gray-100 text-gray-800">
