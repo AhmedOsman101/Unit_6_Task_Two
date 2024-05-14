@@ -244,12 +244,24 @@ img {
 	background-color: #0e7490;
 }
 
+#Error a:hover {
+	background-color: #3b82f6;
+}
+
 .BasePlan,
 .BasePlan *,
 #Question *,
 .navLink,
 footer *,
-#About a {
+#About a,
+#Error a {
 	transition: all 450ms !important;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+#Error,
+#Error div {
+	overflow: hidden !important;
+	display: grid !important;
+	place-items: center !important;
 }
