@@ -15,8 +15,6 @@ const Footer = () => {
 					&copy; Copyright {new Date().getFullYear()}. All Rights
 					Reserved.
 				</span>
-				{/* <div className="grid place-items-center gap-4">
-				</div> */}
 			</footer>
 		</>
 	);
