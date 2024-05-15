@@ -26,8 +26,8 @@ const Navbar = () => {
 
 	return (
 		<>
-			<header className="w-full p-4 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100">
-				<div className="container flex justify-between h-16 mx-auto">
+			<header className="flex flex-col justify-center w-full p-4 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100" id="Navbar">
+				<div className="w-full flex justify-between">
 					<Link
 						rel="noopener noreferrer"
 						to="/"

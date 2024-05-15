@@ -5,13 +5,39 @@
 * {
 	text-transform: capitalize;
 	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#root {
+	display: grid !important;
+	grid-template-rows: 100px 1fr 100px !important;
+	grid-template-columns: 1fr !important;
+	grid-template-areas:
+		"navbar"
+		"main"
+		"footer" !important;
+	min-height: 100vh !important;
+}
+
+#Navbar {
+	grid-area: navbar !important;
+}
+
+#Main {
+	grid-area: main !important;
+	overflow-y: auto !important; /* Allows scrolling if content overflows */
+}
+
+#Footer {
+	grid-area: footer !important;
+	display: grid;
+	place-items: center;
+	gap: 0.5rem;
 }
 
 @layer components {
-	/* * {
-		@apply transition-all duration-[400ms];
-	} */
-
 	.Logo:hover svg {
 		@apply text-gray-100;
 	}
@@ -67,14 +93,6 @@
 	.FeatureBtn {
 		@apply relative px-6 py-3 overflow-hidden font-semibold rounded dark:bg-gray-100 dark:text-gray-900 self-start;
 	}
-
-	/* .FeatureBtn:hover {
-		@apply dark:bg-slate-200;
-	} */
-
-	/* .FeatureBtn:hover > span {
-		@apply dark:bg-cyan-500;
-	} */
 
 	@media (max-width: 1278px) {
 		.plan,
@@ -203,8 +221,13 @@
 body {
 	position: relative;
 	padding-bottom: 110px;
-	min-height: 100vh; /* Ensure body takes up at least the height of the viewport */
+	/* min-height: 100vh;  */
 	overflow-x: hidden !important;
+}
+
+html,
+body {
+	height: 100%;
 }
 
 a {
