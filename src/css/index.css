@@ -248,6 +248,10 @@ img {
 	background-color: #3b82f6;
 }
 
+.BasePlan {
+  align-self: normal !important;
+}
+
 .BasePlan,
 .BasePlan *,
 #Question *,
