@@ -80,29 +80,30 @@ You now need to seek feedback in order to improve the quality and appropriatenes
 -   identify areas of the designs that could be improved
 -   further develop/improve your designs using the feedback given.
 -   You must provide justification of your design decisions, including how you responded to any feedback you received. You should include:
-
     -   how the designs will meet the users needs and be fit for purpose
     -   consideration of alternative design options
     -   which suggested changes you made, which you didn't and why.
 
 # ACTIVITY 4:
 
-You must now develop the website for the client.
+You must now develop the website for the client. (Done)
 During the development of the website you must:
 
--   Create the site using suitable tools and content
+-   Create the site using suitable tools and content (Done)
 -   Use appropriate test plans, test schedules and data to test the site for:
 
-*   functionality
-*   compatibility (with different devices and browsers)
-*   usability (including user testing).
-    You must also seek feedback in order to improve the quality and appropriateness of your website. You must:
+    -   functionality
+    -   compatibility (with different devices and browsers)
+    -   usability (including user testing).
+
+You must also seek feedback in order to improve the quality and appropriateness of your website. You must:
 
 -   show your site to others
-    gather and analyze the feedback you receive identify areas of the site that could be improved
+-   gather and analyze the feedback you receive identify areas of the site that could be improved
 -   further develop/improve your designs using the feedback given.
-    During testing and feedback activities you should collect any results and feedback you have received and document how you have responded to any problem or errors identified. This
-    evidence should include:
+
+During testing and feedback activities you should collect any results and feedback you have received and document how you have responded to any problem or errors identified. This evidence should include:
+
 -   'before' and 'after' versions of the website showing notable changes made during development
 -   details of how the website has been 'Optimized' based on results of testing and user feedback
 

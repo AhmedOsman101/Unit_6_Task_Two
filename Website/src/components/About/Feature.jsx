@@ -44,7 +44,7 @@ const Feature = ({ feature }) => {
 										}
 										key={index}>
 										<span className="font-bold inline-block mr-2">
-											•{" "}
+											•
 										</span>
 										{item}
 									</p>
