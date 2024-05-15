@@ -4,7 +4,7 @@ const Footer = () => {
 	return (
 		<>
 			<footer
-				className="shadow-xl shadow-white p-6 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 fixed bottom-0 left-0 w-full font-semibold"
+				className="shadow-xl shadow-white p-6 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 w-full font-semibold"
 				id="Footer">
 				<Link to="/">
 					<span className="text-gray-600 dark:text-gray-200 text-center block hover:text-blue-400">
